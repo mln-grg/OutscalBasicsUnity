@@ -82,8 +82,9 @@ public class Player_Controller : MonoBehaviour
     private void Jump()
     {
         //if (isGrounded)
-        
-            rb2d.velocity = new Vector2(rb2d.position.x, jumpforce);
+
+        //rb2d.velocity = new Vector2(rb2d.position.x, jumpforce);
+        rb2d.AddForce(Vector2.up* jumpforce);
            
         
     }

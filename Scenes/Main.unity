@@ -1328,7 +1328,7 @@ MonoBehaviour:
     m_Bits: 512
   groundcheck: {fileID: 1785217197}
   speed: 100
-  jumpforce: 3
+  jumpforce: 150
 --- !u!1 &498643896
 GameObject:
   m_ObjectHideFlags: 0
