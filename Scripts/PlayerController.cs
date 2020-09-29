@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Player_Controller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public float groundcheckradius = 10f;
-    public BoxCollider2D crouch_resize_collider;
+    public PlayerInput playerinput;
     public LayerMask whatisGround;
-    public Transform groundcheck;
-    public float speed;
-    public float jumpforce;
+    
 
+    [Range(0,1f)] [SerializeField] private float groundcheckradius = 0.2f;
+    [Range(0,1000f)] [SerializeField] private float speed = 0f;
+    [Range(0,1000f)] [SerializeField]private float jumpforce = 0f;
     
     
-    
+    private BoxCollider2D crouch_resize_collider;
+    private Transform groundcheck;
     private Rigidbody2D rb2d;
     private Animator anim;
     private float move;
@@ -22,40 +20,41 @@ public class Player_Controller : MonoBehaviour
     private bool isfacingright = true;
     private Vector2 backupsize;
     private bool isGrounded;
-    
-    
-    void Start()
+
+
+    private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        backupsize = crouch_resize_collider.offset;
-        
+        crouch_resize_collider = GetComponent<BoxCollider2D>();
+        playerinput = GetComponent<PlayerInput>();
+        groundcheck = this.transform.Find("groundcheck");
     }
 
-    
+    private void Start()
+    {
+        backupsize = crouch_resize_collider.offset;
+    }
+
     void Update()
     {
-        move = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        move = playerinput.returnHorizontalInput();
+        if (playerinput.returnVerticalInput() && isGrounded)
         {
-            
+
             Jump();
-            
+
         }
-        
-        
-        
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (playerinput.returnCrouchInput())
         {
             iscrouching = true;
-            Vector2 resize = crouch_resize_collider.offset;
-            resize.y = 2.457285f;
-            crouch_resize_collider.offset = resize;
+            Crouch();
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        else if (playerinput.returnCrouchInput() == false)
         {
             iscrouching = false;
-            crouch_resize_collider.offset = backupsize;
+            Crouch();
+            
         }
         
         Movement(move*speed*Time.deltaTime);
@@ -71,9 +70,8 @@ public class Player_Controller : MonoBehaviour
     private void Movement(float speed)
     {
         Vector2 movementspeed = new Vector2(speed * 10f, rb2d.velocity.y);
-        if (!iscrouching)
-            rb2d.velocity = movementspeed
-        ;
+        rb2d.velocity = iscrouching == false ? movementspeed : Vector2.zero;
+        
         if (move > 0 && !isfacingright)
             Flip();
         else if (move < 0 && isfacingright)
@@ -81,12 +79,20 @@ public class Player_Controller : MonoBehaviour
     }
     private void Jump()
     {
-        //if (isGrounded)
-
-        //rb2d.velocity = new Vector2(rb2d.position.x, jumpforce);
-        rb2d.AddForce(Vector2.up* jumpforce);
-           
-        
+        rb2d.velocity = new Vector2(rb2d.position.x, jumpforce);                 
+    }
+    private void Crouch()
+    {
+        if (iscrouching)
+        {
+            Vector2 resize = crouch_resize_collider.offset;
+            resize.y = 2.457285f;
+            crouch_resize_collider.offset = resize;
+        }
+        else
+        {
+            crouch_resize_collider.offset = backupsize;
+        }
     }
     private void Flip()
     {
@@ -94,10 +100,6 @@ public class Player_Controller : MonoBehaviour
         Vector3 thescale = transform.localScale;
         thescale.x *= -1;
         transform.localScale = thescale;
-    }
-    private void OnDrawGizmos()
-    {
-       Gizmos.DrawWireSphere(groundcheck.position, groundcheckradius);
     }
     private void Animations()
     {
