@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class PlayerController : MonoBehaviour
     [Range(0,1f)] [SerializeField] private float groundcheckradius = 0.2f;
     [Range(0,1000f)] [SerializeField] private float speed = 0f;
     [Range(0,1000f)] [SerializeField]private float jumpforce = 0f;
-    
-    
+
+
     private BoxCollider2D crouch_resize_collider;
     private Transform groundcheck;
     private Rigidbody2D rb2d;
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
     private bool isfacingright = true;
     private Vector2 backupsize;
     private bool isGrounded;
-
+    private float score=0;
 
     private void Awake()
     {
@@ -100,6 +101,11 @@ public class PlayerController : MonoBehaviour
         Vector3 thescale = transform.localScale;
         thescale.x *= -1;
         transform.localScale = thescale;
+    }
+
+    public void PickUpKey()
+    {
+        
     }
     private void Animations()
     {
