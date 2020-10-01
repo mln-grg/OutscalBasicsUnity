@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerinput;
+    public ScoreController scorecontroller;
     public LayerMask whatisGround;
     
 
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         crouch_resize_collider = GetComponent<BoxCollider2D>();
         playerinput = GetComponent<PlayerInput>();
         groundcheck = this.transform.Find("groundcheck");
+        
     }
 
     private void Start()
@@ -105,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
     public void PickUpKey()
     {
-        
+        scorecontroller.IncreaseScore(10);
     }
     private void Animations()
     {

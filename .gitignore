@@ -94,3 +94,190 @@ Environment/Spiderwebs.png
 Environment/Spiderwebs.png.meta
 Environment/Stomper.png
 Environment/Stomper.png.meta
+TextMesh Pro.meta
+Assets/TileMaps.meta
+Assets/TileMaps/GroundPallette.prefab
+Assets/TileMaps/GroundPallette.prefab.meta
+Assets/TileMaps/GroundPallette2.prefab
+Assets/TileMaps/GroundPallette2.prefab.meta
+Assets/TileMaps/MovingPlatform_Left.asset
+Assets/TileMaps/MovingPlatform_Left.asset.meta
+Assets/TileMaps/MovingPlatform_Middle.asset
+Assets/TileMaps/MovingPlatform_Middle.asset.meta
+Assets/TileMaps/MovingPlatform_Right.asset
+Assets/TileMaps/MovingPlatform_Right.asset.meta
+Assets/TileMaps/PassThroughPlatform_0.asset
+Assets/TileMaps/PassThroughPlatform_0.asset.meta
+Assets/TileMaps/PassThroughPlatform_1.asset
+Assets/TileMaps/PassThroughPlatform_1.asset.meta
+Assets/TileMaps/PassThroughPlatform_2.asset
+Assets/TileMaps/PassThroughPlatform_2.asset.meta
+Environment/Interactables.meta
+Environment/Interactables/Bridge.png
+Environment/Interactables/Bridge.png.meta
+Environment/Interactables/DestructibleBox.bmp
+Environment/Interactables/DestructibleBox.bmp.meta
+Environment/Interactables/DestructibleColumn.png
+Environment/Interactables/DestructibleColumn.png.meta
+Environment/Interactables/DestructibleWall.png
+Environment/Interactables/DestructibleWall.png.meta
+Environment/Interactables/Door.png
+Environment/Interactables/Door.png.meta
+Environment/Interactables/HubDoor0.png
+Environment/Interactables/HubDoor0.png.meta
+Environment/Interactables/HubDoor1.png
+Environment/Interactables/HubDoor1.png.meta
+Environment/Interactables/HubDoor2.png
+Environment/Interactables/HubDoor2.png.meta
+Environment/Interactables/HubDoor3.png
+Environment/Interactables/HubDoor3.png.meta
+Environment/Interactables/HubDoorNormal.png
+Environment/Interactables/HubDoorNormal.png.meta
+Environment/Interactables/InfoSign.png
+Environment/Interactables/InfoSign.png.meta
+Environment/Interactables/InfoSignNormal.png
+Environment/Interactables/InfoSignNormal.png.meta
+Environment/Interactables/MovingPlatform.png
+Environment/Interactables/MovingPlatform.png.meta
+Environment/Interactables/MovingPlatformAlien.png
+Environment/Interactables/MovingPlatformAlien.png.meta
+Environment/Interactables/MovingPlatformAlienNormal.png
+Environment/Interactables/MovingPlatformAlienNormal.png.meta
+Environment/Interactables/MovingPlatformEmissive.png
+Environment/Interactables/MovingPlatformEmissive.png.meta
+Environment/Interactables/MovingPlatformNormal.png
+Environment/Interactables/MovingPlatformNormal.png.meta
+Environment/Interactables/PassThroughPlatform.png
+Environment/Interactables/PassThroughPlatform.png.meta
+Environment/Interactables/PassThroughPlatform_Emissive.png
+Environment/Interactables/PassThroughPlatform_Emissive.png.meta
+Environment/Interactables/PassThroughPlatformAlien.png
+Environment/Interactables/PassThroughPlatformAlien.png.meta
+Environment/Interactables/PassThroughPlatformAlienNormal.png
+Environment/Interactables/PassThroughPlatformAlienNormal.png.meta
+Environment/Interactables/PassThroughPlatformNormal.png
+Environment/Interactables/PassThroughPlatformNormal.png.meta
+Environment/Interactables/PressurePad.png
+Environment/Interactables/PressurePad.png.meta
+Environment/Interactables/PushableBox.png
+Environment/Interactables/PushableBox.png.meta
+Environment/Interactables/PushableBoxEmissive.png
+Environment/Interactables/PushableBoxEmissive.png.meta
+Environment/Interactables/SpikesEmissive.png
+Environment/Interactables/SpikesEmissive.png.meta
+Environment/Interactables/SpikesNew.png
+Environment/Interactables/SpikesNew.png.meta
+Environment/Interactables/StomperDoorOff02.png
+Environment/Interactables/StomperDoorOff02.png.meta
+Environment/Interactables/StomperDoorOn.png
+Environment/Interactables/StomperDoorOn.png.meta
+Environment/Interactables/StomperDoorOn02.png
+Environment/Interactables/StomperDoorOn02.png.meta
+Environment/Interactables/Switch.png
+Environment/Interactables/Switch.png.meta
+Environment/Interactables/TeleporterEmissive.png
+Environment/Interactables/TeleporterEmissive.png.meta
+Environment/Interactables/WeaponPickup.png
+Environment/Interactables/WeaponPickup.png.meta
+TextMesh Pro/Documentation.meta
+TextMesh Pro/Fonts.meta
+TextMesh Pro/Resources.meta
+TextMesh Pro/Shaders.meta
+TextMesh Pro/Sprites.meta
+TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+TextMesh Pro/Fonts/LiberationSans - OFL.txt
+TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+TextMesh Pro/Fonts/LiberationSans.ttf
+TextMesh Pro/Fonts/LiberationSans.ttf.meta
+TextMesh Pro/Resources/Fonts & Materials.meta
+TextMesh Pro/Resources/LineBreaking Following Characters.txt
+TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+TextMesh Pro/Resources/Sprite Assets.meta
+TextMesh Pro/Resources/Style Sheets.meta
+TextMesh Pro/Resources/TMP Settings.asset
+TextMesh Pro/Resources/TMP Settings.asset.meta
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+TextMesh Pro/Shaders/TMP_Bitmap.shader
+TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+TextMesh Pro/Shaders/TMP_SDF SSD.shader
+TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+TextMesh Pro/Shaders/TMP_SDF.shader
+TextMesh Pro/Shaders/TMP_SDF.shader.meta
+TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+TextMesh Pro/Shaders/TMP_Sprite.shader
+TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+TextMesh Pro/Shaders/TMPro.cginc
+TextMesh Pro/Shaders/TMPro.cginc.meta
+TextMesh Pro/Shaders/TMPro_Mobile.cginc
+TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+TextMesh Pro/Shaders/TMPro_Properties.cginc
+TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+TextMesh Pro/Shaders/TMPro_Surface.cginc
+TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+TextMesh Pro/Sprites/EmojiOne Attribution.txt
+TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+TextMesh Pro/Sprites/EmojiOne.json
+TextMesh Pro/Sprites/EmojiOne.json.meta
+TextMesh Pro/Sprites/EmojiOne.png
+TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0000.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0002.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0004.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0006.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0008.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0010.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0012.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0014.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0016.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0018.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0020.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0022.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0024.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0026.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0028.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0030.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0032.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0034.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0036.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0038.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0040.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0042.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0044.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0046.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0048.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0050.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0052.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0054.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0056.png.meta
+Assets/Game Assets/Art/Sprites/AnimatedSprites/Key/KeySpin0058.png.meta
