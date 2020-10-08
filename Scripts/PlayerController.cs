@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
     private void Movement(float speed)
     {
         Vector2 movementspeed = new Vector2(speed * 10f, rb2d.velocity.y);
-        rb2d.velocity = iscrouching == false ? movementspeed : Vector2.zero;
+        rb2d.velocity = iscrouching==false ? movementspeed : rb2d.velocity;
         
         if (move > 0 && !isfacingright)
             Flip();
@@ -113,6 +113,7 @@ public class PlayerController : MonoBehaviour
     private void Animations()
     {
         anim.SetBool("canJump", !isGrounded);
+        anim.SetFloat("VerticalSpeed", rb2d.velocity.y);
         anim.SetFloat("speed", Mathf.Abs(move));
         anim.SetBool("isCrouching", iscrouching);
     }
