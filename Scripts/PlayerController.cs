@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public PlayerInput playerinput;
     public ScoreController scorecontroller;
     public PlayerHealth playerhealth;
+    public GameOverController gameovercontroller;
     public LayerMask whatisGround;
     
 
@@ -117,6 +118,7 @@ public class PlayerController : MonoBehaviour
         if (playerhealth.ReturnPlayerHealth()<=0)
         {
             isDead = true;
+            gameovercontroller.GameOver();
         }
     }
 

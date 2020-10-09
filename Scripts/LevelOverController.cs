@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelOverController : MonoBehaviour
 {
+    public GameOverController gameovercontroller;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
@@ -16,7 +17,7 @@ public class LevelOverController : MonoBehaviour
             }
             else
             {
-                Debug.Log("Game Over");
+                gameovercontroller.GameOver();
             }
 
         }
