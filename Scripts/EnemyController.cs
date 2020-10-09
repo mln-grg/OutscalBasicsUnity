@@ -47,11 +47,12 @@ public class EnemyController : MonoBehaviour
         animator.SetBool("isWalking", iswalking);
         animator.SetBool("isRunning", isrunning);
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.GetComponent<PlayerController>() != null)
-    //    {
-    //        PlayerController playercontroller = collision.gameObject.GetComponent<PlayerController>();          
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<PlayerController>() != null)
+        {
+            PlayerHealth playerhealth = collision.gameObject.GetComponent<PlayerHealth>();
+            playerhealth.TakeDamage();
+        }
+    }
 }

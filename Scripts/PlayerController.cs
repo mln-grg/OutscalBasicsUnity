@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerinput;
     public ScoreController scorecontroller;
+    public PlayerHealth playerhealth;
     public LayerMask whatisGround;
     
 
@@ -23,14 +24,14 @@ public class PlayerController : MonoBehaviour
     private bool isfacingright = true;
     private Vector2 backupsize;
     private bool isGrounded;
-    private float score=0;
-
+    private bool isDead = false;
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         crouch_resize_collider = GetComponent<BoxCollider2D>();
         playerinput = GetComponent<PlayerInput>();
+        playerhealth = GetComponent<PlayerHealth>();
         groundcheck = this.transform.Find("groundcheck");
         
     }
@@ -42,28 +43,33 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        move = playerinput.returnHorizontalInput();
-        if (playerinput.returnVerticalInput() && isGrounded)
+        if (!isDead)
         {
+            move = playerinput.returnHorizontalInput();
+            if (playerinput.returnVerticalInput() && isGrounded)
+            {
 
-            Jump();
+                Jump();
 
+            }
+            if (playerinput.returnCrouchInput())
+            {
+                iscrouching = true;
+                Crouch();
+            }
+            else if (playerinput.returnCrouchInput() == false)
+            {
+                iscrouching = false;
+                Crouch();
+
+            }
+
+            Movement(move * speed * Time.deltaTime);
+                
         }
-        if (playerinput.returnCrouchInput())
-        {
-            iscrouching = true;
-            Crouch();
-        }
-        else if (playerinput.returnCrouchInput() == false)
-        {
-            iscrouching = false;
-            Crouch();
-            
-        }
-        
-        Movement(move*speed*Time.deltaTime);
         Animations();
         CheckSurroundings();
+        DeathCheck();
     }
 
     private void CheckSurroundings() 
@@ -106,6 +112,14 @@ public class PlayerController : MonoBehaviour
         transform.localScale = thescale;
     }
 
+    private void DeathCheck()
+    {
+        if (playerhealth.ReturnPlayerHealth()<=0)
+        {
+            isDead = true;
+        }
+    }
+
     public void PickUpKey()
     {
         scorecontroller.IncreaseScore(10);
@@ -116,5 +130,6 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("VerticalSpeed", rb2d.velocity.y);
         anim.SetFloat("speed", Mathf.Abs(move));
         anim.SetBool("isCrouching", iscrouching);
+        anim.SetBool("isDead", isDead);
     }
 }
