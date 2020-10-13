@@ -40,25 +40,27 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         backupsize = crouch_resize_collider.offset;
+        
     }
 
     void Update()
     {
+        //Debug.Log(rb2d.velocity.y);
         if (!isDead)
         {
-            move = playerinput.returnHorizontalInput();
-            if (playerinput.returnVerticalInput() && isGrounded)
+            move = playerinput.HorizontalInput;
+            if (playerinput.VerticalInput && isGrounded)
             {
 
                 Jump();
 
             }
-            if (playerinput.returnCrouchInput())
+            if (playerinput.Crouchbutton)
             {
                 iscrouching = true;
                 Crouch();
             }
-            else if (playerinput.returnCrouchInput() == false)
+            else if (playerinput.Crouchbutton == false)
             {
                 iscrouching = false;
                 Crouch();

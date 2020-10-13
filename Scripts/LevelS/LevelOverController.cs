@@ -9,11 +9,11 @@ public class LevelOverController : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
-            int totalscenes = SceneManager.sceneCountInBuildSettings;
-            int nextscene = SceneManager.GetActiveScene().buildIndex + 1;
-            if(nextscene < totalscenes)
+            int maxScenes = SceneManager.sceneCountInBuildSettings;
+            if (SceneManager.GetActiveScene().buildIndex != maxScenes)
             {
-                SceneManager.LoadScene(nextscene);
+                Debug.Log("levelcompleted");
+                LevelManager.Instance.MarkLevelCompleted();
             }
             else
             {
